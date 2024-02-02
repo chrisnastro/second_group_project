@@ -1,17 +1,1393 @@
 [
-  {
-    "name": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 5000
-  },
-  {
-    "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 10000
-  },
-  {
-    "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 800
-  }
-]
+  
+    {
+      "id": 70581464,
+      "organization_id": "CA492",
+      "url": "https://www.petfinder.com/dog/a235590-70581464/ca/visalia/tulare-county-animal-services-ca492/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Pit Bull Terrier",
+        "secondary": "Mixed Breed",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "A235590",
+      "description": null,
+      "organization_animal_id": "A235590",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:15+0000",
+      "published_at": "2024-02-01T23:54:14+0000",
+      "distance": null,
+      "contact": {
+        "email": "tcanimalservices@tularecounty.ca.gov",
+        "phone": "(559) 636-4050",
+        "address": {
+          "address1": "14131 Ave 256",
+          "address2": null,
+          "city": "Visalia",
+          "state": "CA",
+          "postcode": "93292",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581464"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ca492"
+        }
+      }
+    },
+    {
+      "id": 70581468,
+      "organization_id": "CA492",
+      "url": "https://www.petfinder.com/dog/firulais-70581468/ca/visalia/tulare-county-animal-services-ca492/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Cairn Terrier",
+        "secondary": "Mixed Breed",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "FIRULAIS",
+      "description": null,
+      "organization_animal_id": "A235644",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:15+0000",
+      "published_at": "2024-02-01T23:54:14+0000",
+      "distance": null,
+      "contact": {
+        "email": "tcanimalservices@tularecounty.ca.gov",
+        "phone": "(559) 636-4050",
+        "address": {
+          "address1": "14131 Ave 256",
+          "address2": null,
+          "city": "Visalia",
+          "state": "CA",
+          "postcode": "93292",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581468"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ca492"
+        }
+      }
+    },
+    {
+      "id": 70581462,
+      "organization_id": "CA492",
+      "url": "https://www.petfinder.com/dog/a235508-70581462/ca/visalia/tulare-county-animal-services-ca492/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "German Shepherd Dog",
+        "secondary": "Mixed Breed",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "A235508",
+      "description": null,
+      "organization_animal_id": "A235508",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:14+0000",
+      "published_at": "2024-02-01T23:54:13+0000",
+      "distance": null,
+      "contact": {
+        "email": "tcanimalservices@tularecounty.ca.gov",
+        "phone": "(559) 636-4050",
+        "address": {
+          "address1": "14131 Ave 256",
+          "address2": null,
+          "city": "Visalia",
+          "state": "CA",
+          "postcode": "93292",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581462"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ca492"
+        }
+      }
+    },
+    {
+      "id": 70581463,
+      "organization_id": "CA492",
+      "url": "https://www.petfinder.com/dog/a235610-70581463/ca/visalia/tulare-county-animal-services-ca492/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Labrador Retriever",
+        "secondary": "Mixed Breed",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "A235610",
+      "description": null,
+      "organization_animal_id": "A235610",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:14+0000",
+      "published_at": "2024-02-01T23:54:13+0000",
+      "distance": null,
+      "contact": {
+        "email": "tcanimalservices@tularecounty.ca.gov",
+        "phone": "(559) 636-4050",
+        "address": {
+          "address1": "14131 Ave 256",
+          "address2": null,
+          "city": "Visalia",
+          "state": "CA",
+          "postcode": "93292",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581463"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ca492"
+        }
+      }
+    },
+    {
+      "id": 70581466,
+      "organization_id": "CA492",
+      "url": "https://www.petfinder.com/dog/a235509-70581466/ca/visalia/tulare-county-animal-services-ca492/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "German Shepherd Dog",
+        "secondary": "Mixed Breed",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "A235509",
+      "description": null,
+      "organization_animal_id": "A235509",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:14+0000",
+      "published_at": "2024-02-01T23:54:13+0000",
+      "distance": null,
+      "contact": {
+        "email": "tcanimalservices@tularecounty.ca.gov",
+        "phone": "(559) 636-4050",
+        "address": {
+          "address1": "14131 Ave 256",
+          "address2": null,
+          "city": "Visalia",
+          "state": "CA",
+          "postcode": "93292",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581466"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ca492"
+        }
+      }
+    },
+    {
+      "id": 70581467,
+      "organization_id": "CA492",
+      "url": "https://www.petfinder.com/dog/a235653-70581467/ca/visalia/tulare-county-animal-services-ca492/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Pit Bull Terrier",
+        "secondary": "Mixed Breed",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "A235653",
+      "description": null,
+      "organization_animal_id": "A235653",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:14+0000",
+      "published_at": "2024-02-01T23:54:13+0000",
+      "distance": null,
+      "contact": {
+        "email": "tcanimalservices@tularecounty.ca.gov",
+        "phone": "(559) 636-4050",
+        "address": {
+          "address1": "14131 Ave 256",
+          "address2": null,
+          "city": "Visalia",
+          "state": "CA",
+          "postcode": "93292",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581467"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ca492"
+        }
+      }
+    },
+    {
+      "id": 70581460,
+      "organization_id": "CA2437",
+      "url": "https://www.petfinder.com/dog/jasper-70581460/ca/auburn/placer-county-animal-services-center-ca2437/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Australian Shepherd",
+        "secondary": "Mixed Breed",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "JASPER",
+      "description": null,
+      "organization_animal_id": "A330484",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:13+0000",
+      "published_at": "2024-02-01T23:54:12+0000",
+      "distance": null,
+      "contact": {
+        "email": "ANSinfo@placer.ca.gov",
+        "phone": "(530) 886-5540",
+        "address": {
+          "address1": "11232 B Avenue",
+          "address2": null,
+          "city": "Auburn",
+          "state": "CA",
+          "postcode": "95603",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581460"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ca2437"
+        }
+      }
+    },
+    {
+      "id": 70581459,
+      "organization_id": "TX2018",
+      "url": "https://www.petfinder.com/dog/clover-70581459/tx/rosenberg/fort-bend-county-animal-services-tx2018/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Pit Bull Terrier",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Female",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "CLOVER",
+      "description": "Clover is always so happy to get out of her kennel! She loves to run and play. She loves a...",
+      "organization_animal_id": "A043213",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:12+0000",
+      "published_at": "2024-02-01T23:54:11+0000",
+      "distance": null,
+      "contact": {
+        "email": "barbara.vass@fortbendcountytx.gov",
+        "phone": "(281) 342-1512",
+        "address": {
+          "address1": "1210 Blume Rd.",
+          "address2": null,
+          "city": "Rosenberg",
+          "state": "TX",
+          "postcode": "77471",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581459"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/tx2018"
+        }
+      }
+    },
+    {
+      "id": 70581454,
+      "organization_id": "NY08",
+      "url": "https://www.petfinder.com/dog/buttercup-70581454/ny/brooklyn/animal-care-centers-of-nyc-brooklyn-ny08/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Mixed Breed",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Senior",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Buttercup",
+      "description": "This pet needs emergency placement. Please click here to go to our emergency placement page for more information.\n\nRecommend emergency...",
+      "organization_animal_id": "191862",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:05+0000",
+      "published_at": "2024-02-01T23:54:04+0000",
+      "distance": null,
+      "contact": {
+        "email": "adopt@nycacc.org",
+        "phone": "(212) 788-4000",
+        "address": {
+          "address1": "2336 Linden Blvd.",
+          "address2": null,
+          "city": "Brooklyn",
+          "state": "NY",
+          "postcode": "11208",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581454"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ny08"
+        }
+      }
+    },
+    {
+      "id": 70581453,
+      "organization_id": "NM137",
+      "url": "https://www.petfinder.com/dog/kane-70581453/nm/albuquerque/albuquerque-animal-welfare-westside-nm137/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "American Bulldog",
+        "secondary": "Saint Bernard",
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Young",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "KANE",
+      "description": null,
+      "organization_animal_id": "A1890233",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:04+0000",
+      "published_at": "2024-02-01T23:54:03+0000",
+      "distance": null,
+      "contact": {
+        "email": "cstanley@cabq.gov",
+        "phone": "505-768-1975 Call Center will direct you ",
+        "address": {
+          "address1": "11800 Sunset Gardens SW",
+          "address2": null,
+          "city": "Albuquerque",
+          "state": "NM",
+          "postcode": "87121",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581453"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/nm137"
+        }
+      }
+    },
+    {
+      "id": 70581427,
+      "organization_id": "NJ309",
+      "url": "https://www.petfinder.com/dog/bear-70581427/nj/riverdale/p-u-r-r-s-dot-n-pups-animal-rescue-team-inc-nj309/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Mixed Breed",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": "Black",
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Large",
+      "coat": "Short",
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": true
+      },
+      "environment": {
+        "children": true,
+        "dogs": true,
+        "cats": null
+      },
+      "tags": [],
+      "name": "Bear",
+      "description": "My Name is Bear - I&#039;m a 13 week female mixed breed baby and I will be at Petsmart in...",
+      "organization_animal_id": null,
+      "photos": [
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/1/?bust=1706831640&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/1/?bust=1706831640&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/1/?bust=1706831640&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/1/?bust=1706831640"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/2/?bust=1706831641&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/2/?bust=1706831641&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/2/?bust=1706831641&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/2/?bust=1706831641"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/3/?bust=1706831641&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/3/?bust=1706831641&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/3/?bust=1706831641&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/3/?bust=1706831641"
+        },
+        {
+          "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/4/?bust=1706831642&width=100",
+          "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/4/?bust=1706831642&width=300",
+          "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/4/?bust=1706831642&width=600",
+          "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/4/?bust=1706831642"
+        }
+      ],
+      "primary_photo_cropped": {
+        "small": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/1/?bust=1706831640&width=300",
+        "medium": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/1/?bust=1706831640&width=450",
+        "large": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/1/?bust=1706831640&width=600",
+        "full": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/70581427/1/?bust=1706831640"
+      },
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:04+0000",
+      "published_at": "2024-02-01T23:54:03+0000",
+      "distance": null,
+      "contact": {
+        "email": "smooch12345@aol.com",
+        "phone": null,
+        "address": {
+          "address1": null,
+          "address2": null,
+          "city": "Riverdale",
+          "state": "NJ",
+          "postcode": "07457",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581427"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/nj309"
+        }
+      }
+    },
+    {
+      "id": 70581438,
+      "organization_id": "CA607",
+      "url": "https://www.petfinder.com/dog/cody-70581438/ca/downey/l-dot-a-county-animal-care-and-control-downey-ca607/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Terrier",
+        "secondary": null,
+        "mixed": false,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Adult",
+      "gender": "Male",
+      "size": "Medium",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": true,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "CODY",
+      "description": null,
+      "organization_animal_id": "A5601637",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:03+0000",
+      "published_at": "2024-02-01T23:54:02+0000",
+      "distance": null,
+      "contact": {
+        "email": null,
+        "phone": "(562) 940-6898",
+        "address": {
+          "address1": "11258 S. Garfield Avenue",
+          "address2": null,
+          "city": "Downey",
+          "state": "CA",
+          "postcode": "90242",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581438"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/ca607"
+        }
+      }
+    },
+    {
+      "id": 70581450,
+      "organization_id": "TX487",
+      "url": "https://www.petfinder.com/dog/may-70581450/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "American Staffordshire Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "MAY",
+      "description": null,
+      "organization_animal_id": "A701698",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:03+0000",
+      "published_at": "2024-02-01T23:54:02+0000",
+      "distance": null,
+      "contact": {
+        "email": "ACSAdoptions@sanantonio.gov",
+        "phone": "(210) 207-6666",
+        "address": {
+          "address1": "4710 State Hwy 151",
+          "address2": null,
+          "city": "San Antonio",
+          "state": "TX",
+          "postcode": "78227",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581450"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/tx487"
+        }
+      }
+    },
+    {
+      "id": 70581451,
+      "organization_id": "TX487",
+      "url": "https://www.petfinder.com/dog/december-70581451/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "American Staffordshire Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "DECEMBER",
+      "description": null,
+      "organization_animal_id": "A701702",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:03+0000",
+      "published_at": "2024-02-01T23:54:02+0000",
+      "distance": null,
+      "contact": {
+        "email": "ACSAdoptions@sanantonio.gov",
+        "phone": "(210) 207-6666",
+        "address": {
+          "address1": "4710 State Hwy 151",
+          "address2": null,
+          "city": "San Antonio",
+          "state": "TX",
+          "postcode": "78227",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581451"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/tx487"
+        }
+      }
+    },
+    {
+      "id": 70581452,
+      "organization_id": "TX487",
+      "url": "https://www.petfinder.com/dog/mo-70581452/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Labrador Retriever",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "MO",
+      "description": null,
+      "organization_animal_id": "A697554",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:03+0000",
+      "published_at": "2024-02-01T23:54:02+0000",
+      "distance": null,
+      "contact": {
+        "email": "ACSAdoptions@sanantonio.gov",
+        "phone": "(210) 207-6666",
+        "address": {
+          "address1": "4710 State Hwy 151",
+          "address2": null,
+          "city": "San Antonio",
+          "state": "TX",
+          "postcode": "78227",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581452"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/tx487"
+        }
+      }
+    },
+    {
+      "id": 70581446,
+      "organization_id": "TX487",
+      "url": "https://www.petfinder.com/dog/march-70581446/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "American Staffordshire Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "MARCH",
+      "description": null,
+      "organization_animal_id": "A701706",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:02+0000",
+      "published_at": "2024-02-01T23:54:01+0000",
+      "distance": null,
+      "contact": {
+        "email": "ACSAdoptions@sanantonio.gov",
+        "phone": "(210) 207-6666",
+        "address": {
+          "address1": "4710 State Hwy 151",
+          "address2": null,
+          "city": "San Antonio",
+          "state": "TX",
+          "postcode": "78227",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581446"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/tx487"
+        }
+      }
+    },
+    {
+      "id": 70581447,
+      "organization_id": "TX487",
+      "url": "https://www.petfinder.com/dog/potatoe-70581447/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Labrador Retriever",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Male",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "POTATOE",
+      "description": null,
+      "organization_animal_id": "A697559",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:02+0000",
+      "published_at": "2024-02-01T23:54:01+0000",
+      "distance": null,
+      "contact": {
+        "email": "ACSAdoptions@sanantonio.gov",
+        "phone": "(210) 207-6666",
+        "address": {
+          "address1": "4710 State Hwy 151",
+          "address2": null,
+          "city": "San Antonio",
+          "state": "TX",
+          "postcode": "78227",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581447"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/tx487"
+        }
+      }
+    },
+    {
+      "id": 70581448,
+      "organization_id": "TX487",
+      "url": "https://www.petfinder.com/dog/august-70581448/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "American Staffordshire Terrier",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "AUGUST",
+      "description": null,
+      "organization_animal_id": "A701703",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:02+0000",
+      "published_at": "2024-02-01T23:54:01+0000",
+      "distance": null,
+      "contact": {
+        "email": "ACSAdoptions@sanantonio.gov",
+        "phone": "(210) 207-6666",
+        "address": {
+          "address1": "4710 State Hwy 151",
+          "address2": null,
+          "city": "San Antonio",
+          "state": "TX",
+          "postcode": "78227",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581448"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/tx487"
+        }
+      }
+    },
+    {
+      "id": 70581449,
+      "organization_id": "TX487",
+      "url": "https://www.petfinder.com/dog/gravy-70581449/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Labrador Retriever",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "GRAVY",
+      "description": null,
+      "organization_animal_id": "A697558",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:02+0000",
+      "published_at": "2024-02-01T23:54:01+0000",
+      "distance": null,
+      "contact": {
+        "email": "ACSAdoptions@sanantonio.gov",
+        "phone": "(210) 207-6666",
+        "address": {
+          "address1": "4710 State Hwy 151",
+          "address2": null,
+          "city": "San Antonio",
+          "state": "TX",
+          "postcode": "78227",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581449"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/tx487"
+        }
+      }
+    },
+    {
+      "id": 70581443,
+      "organization_id": "TX487",
+      "url": "https://www.petfinder.com/dog/jlo-70581443/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
+      "type": "Dog",
+      "species": "Dog",
+      "breeds": {
+        "primary": "Labrador Retriever",
+        "secondary": null,
+        "mixed": true,
+        "unknown": false
+      },
+      "colors": {
+        "primary": null,
+        "secondary": null,
+        "tertiary": null
+      },
+      "age": "Baby",
+      "gender": "Female",
+      "size": "Small",
+      "coat": null,
+      "attributes": {
+        "spayed_neutered": false,
+        "house_trained": false,
+        "declawed": null,
+        "special_needs": false,
+        "shots_current": false
+      },
+      "environment": {
+        "children": null,
+        "dogs": null,
+        "cats": null
+      },
+      "tags": [],
+      "name": "JLO",
+      "description": null,
+      "organization_animal_id": "A697557",
+      "photos": [],
+      "primary_photo_cropped": null,
+      "videos": [],
+      "status": "adoptable",
+      "status_changed_at": "2024-02-01T23:54:01+0000",
+      "published_at": "2024-02-01T23:54:00+0000",
+      "distance": null,
+      "contact": {
+        "email": "ACSAdoptions@sanantonio.gov",
+        "phone": "(210) 207-6666",
+        "address": {
+          "address1": "4710 State Hwy 151",
+          "address2": null,
+          "city": "San Antonio",
+          "state": "TX",
+          "postcode": "78227",
+          "country": "US"
+        }
+      },
+      "_links": {
+        "self": {
+          "href": "/v2/animals/70581443"
+        },
+        "type": {
+          "href": "/v2/types/dog"
+        },
+        "organization": {
+          "href": "/v2/organizations/tx487"
+        }
+      }
+    }
+  ]
