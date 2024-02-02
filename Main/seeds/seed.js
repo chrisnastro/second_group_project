@@ -14,7 +14,11 @@ const seedDatabase = async () => {
 
   for (const pet of petData) {
     await Pet.create({
-      ...pet,
+      ...pet, 
+      primary_breed: pet.breeds ? pet.breeds.primary : '',
+      name: pet.name,
+      description: pet.description ? pet.description : '',
+      // photos: pet.primary_photo_cropped,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
