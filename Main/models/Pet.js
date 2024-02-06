@@ -10,10 +10,10 @@ Pet.init(
       allowNull: false,
       primaryKey: true,
     },
-    // primary_photo_cropped: {
-    //   type: DataTypes.BLOB,
-    //   allowNull: true,
-    // },
+    filename: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     type: {
       type: DataTypes.STRING,
       allowNull: false,

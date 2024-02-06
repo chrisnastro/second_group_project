@@ -3,7 +3,8 @@
     "id": 70581464,
     "organization_id": "CA492",
     "url": "https://www.petfinder.com/dog/a235590-70581464/ca/visalia/tulare-county-animal-services-ca492/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
-    "type": "Dog",
+    "type": "Dog", 
+    "filename": "assets/dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Pit Bull Terrier",
@@ -72,6 +73,7 @@
     "organization_id": "CA492",
     "url": "https://www.petfinder.com/dog/firulais-70581468/ca/visalia/tulare-county-animal-services-ca492/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Cairn Terrier",
@@ -140,6 +142,7 @@
     "organization_id": "CA492",
     "url": "https://www.petfinder.com/dog/a235508-70581462/ca/visalia/tulare-county-animal-services-ca492/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "German Shepherd Dog",
@@ -208,6 +211,7 @@
     "organization_id": "CA492",
     "url": "https://www.petfinder.com/dog/a235610-70581463/ca/visalia/tulare-county-animal-services-ca492/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Labrador Retriever",
@@ -276,6 +280,7 @@
     "organization_id": "CA492",
     "url": "https://www.petfinder.com/dog/a235509-70581466/ca/visalia/tulare-county-animal-services-ca492/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "German Shepherd Dog",
@@ -344,6 +349,7 @@
     "organization_id": "CA492",
     "url": "https://www.petfinder.com/dog/a235653-70581467/ca/visalia/tulare-county-animal-services-ca492/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Pit Bull Terrier",
@@ -412,6 +418,7 @@
     "organization_id": "CA2437",
     "url": "https://www.petfinder.com/dog/jasper-70581460/ca/auburn/placer-county-animal-services-center-ca2437/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Australian Shepherd",
@@ -480,6 +487,7 @@
     "organization_id": "TX2018",
     "url": "https://www.petfinder.com/dog/clover-70581459/tx/rosenberg/fort-bend-county-animal-services-tx2018/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Pit Bull Terrier",
@@ -548,6 +556,7 @@
     "organization_id": "NY08",
     "url": "https://www.petfinder.com/dog/buttercup-70581454/ny/brooklyn/animal-care-centers-of-nyc-brooklyn-ny08/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Mixed Breed",
@@ -616,6 +625,7 @@
     "organization_id": "NM137",
     "url": "https://www.petfinder.com/dog/kane-70581453/nm/albuquerque/albuquerque-animal-welfare-westside-nm137/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "American Bulldog",
@@ -684,6 +694,7 @@
     "organization_id": "NJ309",
     "url": "https://www.petfinder.com/dog/bear-70581427/nj/riverdale/p-u-r-r-s-dot-n-pups-animal-rescue-team-inc-nj309/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Mixed Breed",
@@ -782,6 +793,7 @@
     "organization_id": "CA607",
     "url": "https://www.petfinder.com/dog/cody-70581438/ca/downey/l-dot-a-county-animal-care-and-control-downey-ca607/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Terrier",
@@ -850,6 +862,7 @@
     "organization_id": "TX487",
     "url": "https://www.petfinder.com/dog/may-70581450/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "American Staffordshire Terrier",
@@ -918,6 +931,7 @@
     "organization_id": "TX487",
     "url": "https://www.petfinder.com/dog/december-70581451/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "American Staffordshire Terrier",
@@ -986,6 +1000,7 @@
     "organization_id": "TX487",
     "url": "https://www.petfinder.com/dog/mo-70581452/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Labrador Retriever",
@@ -1054,6 +1069,7 @@
     "organization_id": "TX487",
     "url": "https://www.petfinder.com/dog/march-70581446/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "American Staffordshire Terrier",
@@ -1122,6 +1138,7 @@
     "organization_id": "TX487",
     "url": "https://www.petfinder.com/dog/potatoe-70581447/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Labrador Retriever",
@@ -1190,6 +1207,7 @@
     "organization_id": "TX487",
     "url": "https://www.petfinder.com/dog/august-70581448/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "American Staffordshire Terrier",
@@ -1258,6 +1276,7 @@
     "organization_id": "TX487",
     "url": "https://www.petfinder.com/dog/gravy-70581449/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Labrador Retriever",
@@ -1326,6 +1345,7 @@
     "organization_id": "TX487",
     "url": "https://www.petfinder.com/dog/jlo-70581443/tx/san-antonio/animal-care-services-division-city-of-san-antonio-tx487/?referrer_id=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc&utm_source=api&utm_medium=partnership&utm_content=dfed40c5-b35a-4f7e-b8d7-a21d75b91cfc",
     "type": "Dog",
+    "filename": "dog4.jpg",
     "species": "Dog",
     "breeds": {
       "primary": "Labrador Retriever",
