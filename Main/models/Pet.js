@@ -48,6 +48,9 @@ Pet.init(
         key: 'id',
       },
     },
+    favorite_list: {
+      type: DataTypes.BOOLEAN,
+    }
   },
   {
     sequelize,

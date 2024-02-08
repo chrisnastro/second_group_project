@@ -2,34 +2,39 @@ const router = require('express').Router();
 const { Pet } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.post('/', withAuth, async (req, res) => {
+// Route for adding a pet to favorites
+router.post('/:id/favorite', withAuth, async (req, res) => {
   try {
-    const newPet = await Pet.create({
-      ...req.body,
-      user_id: req.session.user_id,
-    });
-
-    res.status(200).json(newPet);
-  } catch (err) {
-    res.status(400).json(err);
-  }
-});
-
-router.delete('/:id', withAuth, async (req, res) => {
-  try {
-    const petData = await Pet.destroy({
-      where: {
-        id: req.params.id,
-        user_id: req.session.user_id,
-      },
-    });
-
-    if (!petData) {
+    const pet = await Pet.findByPk(req.params.id);
+    
+    if (!pet) {
       res.status(404).json({ message: 'No pet found with this id!' });
       return;
     }
 
-    res.status(200).json(petData);
+    // Mark the pet as a favorite for the current user
+    await pet.update({ isFavorite: true });
+
+    res.status(200).json({ message: 'Pet added to favorites!' });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+// Route for removing a pet from favorites
+router.delete('/:id/favorite', withAuth, async (req, res) => {
+  try {
+    const pet = await Pet.findByPk(req.params.id);
+    
+    if (!pet) {
+      res.status(404).json({ message: 'No pet found with this id!' });
+      return;
+    }
+
+    // Remove the pet from favorites for the current user
+    await pet.update({ isFavorite: false });
+
+    res.status(200).json({ message: 'Pet removed from favorites!' });
   } catch (err) {
     res.status(500).json(err);
   }
