@@ -50,10 +50,10 @@ Pet.init(
     },
     favorite: {
       type: DataTypes.BOOLEAN,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
+      // references: {
+      //   model: 'user',
+      //   key: 'id',
+      // },
     },
   },
   {

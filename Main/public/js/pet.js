@@ -1,20 +1,21 @@
-const delButtonHandler = async (event) => {
-    if (event.target.hasAttribute('data-id')) {
-      const id = event.target.getAttribute('data-id');
+const favButtonHandler = async (event) => {
+    event.preventDefault();
+    console.log(event.target)
+    
+      const id = document.querySelector.getAttribute('pet-id');
   
-      const response = await fetch(`/api/projects/${id}`, {
-        method: 'DELETE',
+      const response = await fetch(`/api/pets/${id}`, {
+        method: 'PUT',
       });
   
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location('/profile');
       } else {
-        alert('Failed to delete project');
+        alert('Could not add to favorites');
       }
-    }
+    
   };
 
-document
-  .querySelector('.login-form')
-  .addEventListener('submit', loginFormHandler);
-
+  document
+.querySelector('#favorite-pet')
+.addEventListener('click', favButtonHandler);
