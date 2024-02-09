@@ -2,10 +2,34 @@ const router = require('express').Router();
 const { Pet } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+router.get('/api/pets', (req, res) => {res.json(`${req.method} request recieved`)});
+
+const favButtonHandler = async (event) => {
+  event.preventDefault();
+  console.log(event.target);
+  
+  const id = document.querySelector('#favorite-pet').getAttribute(
+      "data-id"
+  );
+
+  const response = await fetch(`/api/pets/${id}`, {
+      method: 'PUT',
+      headers: {
+          'Content-Type': 'application/json' 
+      },
+      body: JSON.stringify({ id: id }), // Include the id in the request body
+  });
+
+  if (response.ok) {
+      document.location('/profile');
+  } else {
+      alert('Could not add to favorites');
+  }
+};
 // Route for adding a pet to favorites
-router.post('/:id/favorite', withAuth, async (req, res) => {
+router.put('/:id/favorite', withAuth, async (req, res) => {
   try {
-    const pet = await Pet.findByPk(req.params.id);
+    const pet = await Pet.update(req.params.id);
     
     if (!pet) {
       res.status(404).json({ message: 'No pet found with this id!' });

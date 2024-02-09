@@ -1,20 +1,25 @@
 const favButtonHandler = async (event) => {
-    event.preventDefault();
-    console.log(event.target)
-    
-      const id = document.querySelector.getAttribute('pet-id');
+  event.preventDefault();
+  console.log(event.target);
   
-      const response = await fetch(`/api/pets/${id}`, {
-        method: 'PUT',
-      });
-  
-      if (response.ok) {
-        document.location('/profile');
-      } else {
-        alert('Could not add to favorites');
-      }
-    
-  };
+  const id = document.querySelector('#favorite-pet').getAttribute(
+      "data-id"
+  );
+
+  const response = await fetch(`/api/favorites`, {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json' 
+      },
+      body: JSON.stringify({ pet_id: id }), 
+  });
+
+  if (response.ok) {
+      document.location('/profile');
+  } else {
+      alert('Could not add to favorites');
+  }
+};
 
   document
 .querySelector('#favorite-pet')
