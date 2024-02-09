@@ -40,9 +40,18 @@ router.get('/pet/:id', async (req, res) => {
 
     const pet = petData.get({ plain: true });
 
+    let isFavorite = false;
+    if (req.session.logged_in) {
+      const currentUser = await User.findByPk(req.session.user_id);
+      if (currentUser) {
+        isFavorite = await currentUser.hasFavorite(petData);
+      }
+    }
+
     res.render('pet', {
       ...pet,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      isFavorite: isFavorite,
     });
   } catch (err) {
     res.status(500).json(err);
