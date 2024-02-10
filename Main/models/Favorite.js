@@ -10,8 +10,26 @@ Favorite.init(
             allowNull: true,
             primaryKey: true,
             autoIncrement: true,
-        }
-    },
+        },
+        user_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+              model: 'user',
+              key: 'id',
+              unique: false
+            }
+        },
+        pet_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+              model: 'pet',
+              key: 'id',
+              unique: false
+            }
+        },
+     },
     {
         sequelize,
         timestamps: false,

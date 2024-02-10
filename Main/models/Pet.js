@@ -9,6 +9,7 @@ Pet.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
+      autoIncrement: true,
     },
     filename: {
       type: DataTypes.STRING,
@@ -47,14 +48,7 @@ Pet.init(
         model: 'user',
         key: 'id',
       },
-    },
-    favorite: {
-      type: DataTypes.BOOLEAN,
-      // references: {
-      //   model: 'user',
-      //   key: 'id',
-      // },
-    },
+    }
   },
   {
     sequelize,

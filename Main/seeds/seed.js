@@ -1,29 +1,49 @@
 const sequelize = require('../config/connection');
-const { User, Pet } = require('../models');
+const { User, Pet, Favorite } = require('../models');
 
 const userData = require('./userData.json');
 const petData = require('./petData.json');
 
 const seedDatabase = async () => {
-  await sequelize.sync({ force: true });
+  try {
+    console.log('Starting database seeding...');
 
-  const users = await User.bulkCreate(userData, {
-    individualHooks: true,
-    returning: true,
-  });
+    await sequelize.sync({ force: true });
 
-  for (const pet of petData) {
-    await Pet.create({
-      ...pet, 
-      primary_breed: pet.breeds ? pet.breeds.primary : '',
-      // name: pet.name,
-      description: pet.description ? pet.description : '',
-      // photos: pet.primary_photo_cropped,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
+    console.log('Database synchronized successfully.');
+
+    const users = await User.bulkCreate(userData, {
+      individualHooks: true,
+      returning: true,
     });
-  }
 
-  process.exit(0);
+    console.log(`${users.length} users created successfully.`);
+
+    for (const pet of petData) {
+      const createdPet = await Pet.create({
+        ...pet, 
+        primary_breed: pet.breeds ? pet.breeds.primary : '',
+        description: pet.description ? pet.description : '',
+        user_id: users[Math.floor(Math.random() * users.length)].id,
+      });
+
+      console.log(`Pet with ID ${createdPet.id} created successfully.`);
+
+      // Add favorite entry for each pet and a random user
+      const randomUser = users[Math.floor(Math.random() * users.length)];
+      await Favorite.create({
+        pet_id: createdPet.id,
+        user_id: randomUser.id
+      });
+      console.log(`Favorite entry added for pet with ID ${createdPet.id} and user with ID ${randomUser.id}.`);
+    }
+
+    console.log('Database seeding completed successfully.');
+  } catch (error) {
+    console.error('An error occurred during database seeding:', error);
+  } finally {
+    process.exit(0);
+  }
 };
 
 seedDatabase();

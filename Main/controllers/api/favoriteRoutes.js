@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Pet, User } = require('../../models');
+const { Pet, User, Favorite } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.put('/:id/add', withAuth, async (req, res) => {
