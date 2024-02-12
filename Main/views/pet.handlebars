@@ -1,15 +1,17 @@
-<div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{description}} <br>
-{{type}} <br>
-{{primary_breed}} <br>
-{{age}} <br>
-{{gender}} <br>
-{{size}} <br>
-  </p>
+<div class="container col-md-6">
+  <div class="card-pet">
+    <h2>{{name}}</h2>
+    <img src="/images/{{filename}}" alt="{{description}}">
+    <p>{{description}} <br>
+      Breed: {{primary_breed}} <br>
+      Age: {{age}} <br>
+      Gender: {{gender}} <br>
+      Size: {{size}} <br>
+    </p>
 
-  
-  <p>
-    <button class="btn btn-primary">Save This Pet!</button>
-  </p>
+
+    <p>
+      <button class="btn btn-primary">Save This Pet!</button>
+    </p>
+  </div>
 </div>
