@@ -42,6 +42,7 @@ This application utilizes the following packages along with chatgpt as a debuggi
 
 - [https://expressjs.com/](Express.js)
 - [https://www.npmjs.com/package/uuid](uuid)
+- [https://www.mysql.com/](mysql)
 
 ## Further Development
 
@@ -54,8 +55,18 @@ This application utilizes the following packages along with chatgpt as a debuggi
 - Ashley Maximillian
 - [e6m9 on github](https://github.com/e6m9)
 
+-Chris Nastro
+- [chrisnastro on hithub](https://github.com/chrisnastro)
+
+-Manin Gauba
+- [GxUniverse on github](https://github.com/GxUniverse)
+
+-Harold Stephens
+-[haroldstephens on github](https://github.com/haroldstephens)
+
 ## Contact
-For any inquiries, please send yr emails to:
+
+For any inquiries, please send your emails to:
 
 - alostsound@gmail.com
 
