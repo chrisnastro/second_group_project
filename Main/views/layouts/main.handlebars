@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="w-100">
 
 <head>
   <meta charset="UTF-8">
@@ -16,16 +16,22 @@
       <h1>
         <a href="/">Save a Life!</a>
       </h1>
-      <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
     </header>
+    <div class="display-flex">
+      <nav>
+        <h3>
+          <!-- Conditionally render login or logout links -->
+          {{#if logged_in}}
+          <a href="/profile">profile</a> |
+          <button class="no-button" id="logout">logout</button>
+          {{else}}
+
+          <a href="/login" class="active">Login</a>
+
+          {{/if}}
+        </h3>
+      </nav>
+    </div>
     <main class="flex-container mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
