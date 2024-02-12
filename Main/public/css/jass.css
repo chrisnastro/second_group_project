@@ -139,8 +139,13 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 img {
-  border-style: none;
+  border-style: inset;
+  border-width: 4px;
   border-radius: 25px;
+ 
+    width:  250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 /* Forms
@@ -360,6 +365,7 @@ body {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 16px;
   color: #1a1a1a;
+  background-image: "./images/background.jpg";
 }
 
 h1,
@@ -918,6 +924,7 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
+  
   background-color: #EDE5F3 !important;
 }
 
