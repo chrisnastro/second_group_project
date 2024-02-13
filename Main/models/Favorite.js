@@ -17,7 +17,6 @@ Favorite.init(
             references: {
               model: 'user',
               key: 'id',
-              unique: false
             }
         },
         pet_id: {
@@ -26,7 +25,6 @@ Favorite.init(
             references: {
               model: 'pet',
               key: 'id',
-              unique: false
             }
         },
      },

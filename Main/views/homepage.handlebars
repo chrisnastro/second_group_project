@@ -24,6 +24,9 @@
 {{pet.size}} <br>
       {{pet.description}}
     </p>
+    {{#if isFavorite}}
+<p>This pet is already in your favorites list!</p>
+{{/if}}
   </div>
 </div>
 {{/each}}

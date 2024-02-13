@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Pet, Favorite } = require('../../models');
+const { User, Favorite } = require('../../models');
 
 router.post('/', async (req, res) => {
   try {
@@ -61,7 +61,7 @@ router.post('/logout', (req, res) => {
 router.get('/:id/favorites', async (req, res) => {
   try {
     const user = await User.findByPk(req.params.id, {
-      include: [{ model: Pet, as: 'favorite_pets' }],
+      include: [{ model: Favorite, as: 'favorite_pets' }],
     });
     if (!user) {
       res.status(404).json({ message: 'User not found!' });

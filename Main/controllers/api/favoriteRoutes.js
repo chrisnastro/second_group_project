@@ -13,14 +13,22 @@ router.put('/:id/add', withAuth, async (req, res) => {
 
     const currentUser = await User.findByPk(req.session.user_id);
 
-    const isFavorite = await currentUser.hasFavorite(pet);
+    const isFavorite = await Favorite.findOne({
+      where: {
+        userId: currentUser.id,
+        petId: pet.id
+      }
+    });
 
     if (isFavorite) {
       res.status(400).json({ message: 'This pet is already in your favorites list!'});
       return;
     }
 
-    await currentUser.addFavorite(pet);
+    await Favorite.create({
+      userId: currentUser.id,
+      petId: pet.id
+    });
 
     res.status(200).json({ message: 'Pet added to favorites!' });
   } catch (err) {
@@ -39,7 +47,12 @@ router.delete('/:id/remove', withAuth, async (req, res) => {
 
     const currentUser = await User.findByPk(req.session.user_id);
 
-    await currentUser.removeFavorite(pet);
+    await Favorite.destroy({
+      where: {
+        userId: currentUser.id,
+        petId: pet.id
+      }
+    });
 
     res.status(200).json({ message: 'Pet removed from favorites!' });
   } catch (err) {

@@ -5,6 +5,6 @@ const favoriteRoutes = require('./favoriteRoutes');
 
 router.use('/users', userRoutes);
 router.use('/pets', petRoutes);
-router.use('/favorites', favoriteRoutes);
+router.use('/favorite', favoriteRoutes);
 
 module.exports = router;

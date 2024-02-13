@@ -4,14 +4,23 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all pets and JOIN with user data
+    let includeOptions = [
+      {
+        model: User,
+        attributes: ['name'],
+      },
+    ];
+
+    if (req.session.logged_in) {
+      includeOptions.push({
+        model: Favorite,
+        required: false,
+        where: { userId: req.session.user_id },
+      });
+    }
+
     const petData = await Pet.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
+      include: includeOptions,
     });
 
     // Serialize data so the template can read it
