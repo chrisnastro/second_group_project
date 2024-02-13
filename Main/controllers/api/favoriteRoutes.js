@@ -2,7 +2,11 @@ const router = require('express').Router();
 const { Pet, User, Favorite } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.put('/:id/add', withAuth, async (req, res) => {
+router.post('/', async (req, res) => {
+res.send("hiyaaa")
+});
+
+router.post('/:id/add', withAuth, async (req, res) => {
   try {
     const pet = await Pet.findByPk(req.params.id);
     

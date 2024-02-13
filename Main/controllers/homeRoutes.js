@@ -4,14 +4,11 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    let includeOptions = [
-      {
-        model: User,
-        attributes: ['name'],
-      },
-    ];
 
-    if (req.session.logged_in) {
+    const petData = await Pet.findAll({
+    });
+
+    if (req.session.loggedIn) {
       includeOptions.push({
         model: Favorite,
         required: false,
@@ -19,17 +16,13 @@ router.get('/', async (req, res) => {
       });
     }
 
-    const petData = await Pet.findAll({
-      include: includeOptions,
-    });
-
     // Serialize data so the template can read it
     const pets = petData.map((pet) => pet.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
-      pets, 
-      logged_in: req.session.logged_in 
+    res.render('homepage', {
+      pets,
+      loggedIn: req.session.loggedIn
     });
   } catch (err) {
     res.status(500).json(err);
@@ -39,18 +32,12 @@ router.get('/', async (req, res) => {
 router.get('/pet/:id', async (req, res) => {
   try {
     const petData = await Pet.findByPk(req.params.id, {
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
     });
 
     const pet = petData.get({ plain: true });
 
     let isFavorite = false;
-    if (req.session.logged_in) {
+    if (req.session.loggedIn) {
       const currentUser = await User.findByPk(req.session.user_id);
       if (currentUser) {
         isFavorite = await currentUser.hasFavorite(petData);
@@ -59,7 +46,7 @@ router.get('/pet/:id', async (req, res) => {
 
     res.render('pet', {
       ...pet,
-      logged_in: req.session.logged_in,
+      loggedIn: req.session.loggedIn,
       isFavorite: isFavorite,
     });
   } catch (err) {
@@ -80,7 +67,7 @@ router.get('/profile', withAuth, async (req, res) => {
 
     res.render('profile', {
       ...user,
-      logged_in: true
+      loggedIn: true
     });
   } catch (err) {
     res.status(500).json(err);
@@ -89,7 +76,7 @@ router.get('/profile', withAuth, async (req, res) => {
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
-  if (req.session.logged_in) {
+  if (req.session.loggedIn) {
     res.redirect('/profile');
     return;
   }

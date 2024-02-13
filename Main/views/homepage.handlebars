@@ -6,15 +6,7 @@
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
       <a href="/pet/{{pet.id}}">{{pet.name}}</a>
     </h2>
-    {{!-- <p>
-      <span for="img" aria-label="money">💲</span>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!
-    </p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
-  </div>
-  <div class="col-md-7"> --}} 
+
 <p>
 <img src="/images/{{filename}}" alt="{{description}}">
 {{pet.type}} <br>
@@ -22,7 +14,7 @@
 {{pet.age}} <br>
 {{pet.gender}} <br>
 {{pet.size}} <br>
-      {{pet.description}}
+{{pet.description}}
     </p>
     {{#if isFavorite}}
 <p>This pet is already in your favorites list!</p>

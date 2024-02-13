@@ -15,7 +15,7 @@ Favorite.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
-              model: 'user',
+              model: 'pet',
               key: 'id',
             }
         },
@@ -23,7 +23,7 @@ Favorite.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
-              model: 'pet',
+              model: 'user',
               key: 'id',
             }
         },
