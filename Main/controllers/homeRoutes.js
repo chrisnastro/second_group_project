@@ -23,6 +23,7 @@ router.get('/', async (req, res) => {
       logged_in: req.session.logged_in 
     });
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
@@ -39,8 +40,8 @@ router.get('/pet/:id', async (req, res) => {
     });
 
     const pet = petData.get({ plain: true });
-
     let isFavorite = false;
+
     if (req.session.logged_in) {
       const currentUser = await User.findByPk(req.session.user_id);
       if (currentUser) {
@@ -54,6 +55,7 @@ router.get('/pet/:id', async (req, res) => {
       isFavorite: isFavorite,
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
@@ -64,7 +66,7 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Pet }],
+      include: [{ model: Pet, as: 'favorite_pets' }],
     });
 
     const user = userData.get({ plain: true });

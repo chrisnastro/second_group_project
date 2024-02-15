@@ -11,7 +11,7 @@ User.belongsToMany(Pet, {
 Pet.belongsToMany(User, {
   through: Favorite,
     foreignKey: 'pet_id',
-  as: 'starred_by_users'
+  as: 'favorited_by_users'
 })
 
 module.exports = { User, Pet, Favorite };

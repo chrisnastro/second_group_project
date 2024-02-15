@@ -58,7 +58,7 @@ router.post('/logout', (req, res) => {
   }
 });
 
-router.get('/:id/favorites', async (req, res) => {
+router.get('/:id/favorite', withAuth, async (req, res) => {
   try {
     const user = await User.findByPk(req.params.id, {
       include: [{ model: Pet, as: 'favorite_pets' }],
