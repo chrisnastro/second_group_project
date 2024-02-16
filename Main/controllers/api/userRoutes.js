@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Pet, Favorite } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.post('/', async (req, res) => {
   try {
@@ -58,7 +59,7 @@ router.post('/logout', (req, res) => {
   }
 });
 
-router.get('/:id/favorite', withAuth, async (req, res) => {
+router.get('/:id/favorite', async (req, res) => {
   try {
     const user = await User.findByPk(req.params.id, {
       include: [{ model: Pet, as: 'favorite_pets' }],

@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Route for fetching a single pet
+// // Route for fetching a single pet
 router.get('/:id', async (req, res) => {
   try {
     const pet = await Pet.findByPk(req.params.id);

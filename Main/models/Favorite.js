@@ -7,7 +7,6 @@ Favorite.init(
     {
         id: {
             type: DataTypes.INTEGER,
-            allowNull: true,
             primaryKey: true,
             autoIncrement: true,
         },
@@ -17,7 +16,7 @@ Favorite.init(
             references: {
               model: 'user',
               key: 'id',
-              unique: false
+              onDelete: 'CASCADE',
             }
         },
         pet_id: {
@@ -26,7 +25,6 @@ Favorite.init(
             references: {
               model: 'pet',
               key: 'id',
-              unique: false
             }
         },
      },

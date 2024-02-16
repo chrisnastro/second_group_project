@@ -10,6 +10,7 @@ router.get('/', async (req, res) => {
         {
           model: User,
           attributes: ['name'],
+          as: 'favorited_by_user'
         },
       ],
     });
@@ -35,6 +36,7 @@ router.get('/pet/:id', async (req, res) => {
         {
           model: User,
           attributes: ['name'],
+          as: 'favorited_by_user',
         },
       ],
     });
@@ -45,7 +47,7 @@ router.get('/pet/:id', async (req, res) => {
     if (req.session.logged_in) {
       const currentUser = await User.findByPk(req.session.user_id);
       if (currentUser) {
-        isFavorite = await currentUser.hasFavorite(petData);
+        isFavorite = await currentUser.hasFavorite(pet);
       }
     }
 
