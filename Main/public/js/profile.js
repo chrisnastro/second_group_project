@@ -1,51 +1,35 @@
-const newFormHandler = async (event) => {
-  event.preventDefault();
+document.addEventListener('DOMContentLoaded', async () => {
 
-  const name = document.querySelector('#project-name').value.trim();
-  const favorite = document.querySelector('#favorite-pet').value.trim();
-  const description = document.querySelector('#project-desc').value.trim();
+  const handleUserProfileCreation = async (event) => {
+    event.preventDefault(); 
 
-  if (name && needed_funding && description) {
-    const response = await fetch(`/api/projects`, {
-      method: 'POST',
-      body: JSON.stringify({ name, needed_funding, description }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+    const name = document.querySelector('#name-input').value.trim();
+    const email = document.querySelector('#email-input').value.trim();
+    const password = document.querySelector('#password-input').value.trim();
 
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to create project');
+    try {
+      const response = await fetch('/profile', {
+        method: 'POST',
+        body: JSON.stringify({ name, email, password }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        window.location.reload();
+      } else {
+        console.error('Failed to create user profile');
+        alert('Failed to create user profile');
+      }
+    } catch (error) {
+      console.error('Error creating user profile:', error);
+      alert('Failed to create user profile');
     }
+  };
+
+  const userProfileForm = document.querySelector('#user-profile-form');
+  if (userProfileForm) {
+    userProfileForm.addEventListener('submit', handleUserProfileCreation);
   }
-};
-
-const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
-
-    const response = await fetch(`/api/projects/${id}`, {
-      method: 'DELETE',
-    });
-
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to delete project');
-    }
-  }
-};
-
-// document
-//   .querySelector('.new-project-form')
-//   .addEventListener('submit', newFormHandler);
-
-// document
-//   .querySelector('.project-list')
-//   .addEventListener('click', delButtonHandler);
-
-// document
-// .querySelector('#favorite-pet')
-// .addEventListener('click', favButtonHandler);
+});
