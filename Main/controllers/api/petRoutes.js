@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { Pet } = require('../../models');
-const withAuth = require('../../utils/auth');
 
 // Route for fetching all pets
 router.get('/', async (req, res) => {
@@ -12,6 +11,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+// // Route for fetching a single pet
 router.get('/:id', async (req, res) => {
   try {
     const pet = await Pet.findByPk(req.params.id);

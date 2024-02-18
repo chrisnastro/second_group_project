@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { User, Favorite } = require('../../models');
+const { User, Pet, Favorite } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.post('/', async (req, res) => {
   try {
@@ -58,7 +59,27 @@ router.post('/logout', (req, res) => {
   }
 });
 
-router.get('/:id/favorites', async (req, res) => {
+// Use withAuth middleware to prevent access to route
+router.get('/profile', withAuth, async (req, res) => {
+  try {
+    // Find the logged in user based on the session ID
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] },
+      include: [{ model: Pet, as: 'favorite_pets' }],
+    });
+
+    const user = userData.get({ plain: true });
+
+    res.render('profile', {
+      ...user,
+      logged_in: true
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/:id/favorite', withAuth, async (req, res) => {
   try {
     const user = await User.findByPk(req.params.id, {
       include: [{ model: Favorite, as: 'favorite_pets' }],

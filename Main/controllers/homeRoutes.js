@@ -1,26 +1,17 @@
 const router = require('express').Router();
 const { Pet, User, Favorite } = require('../models');
-const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    let includeOptions = [
-      {
-        model: User,
-        attributes: ['name'],
-      },
-    ];
-
-    if (req.session.logged_in) {
-      includeOptions.push({
-        model: Favorite,
-        required: false,
-        where: { userId: req.session.user_id },
-      });
-    }
-
+    // Get all pets and JOIN with user data
     const petData = await Pet.findAll({
-      include: includeOptions,
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+          as: 'favorited_by_user'
+        },
+      ],
     });
 
     // Serialize data so the template can read it
@@ -32,6 +23,7 @@ router.get('/', async (req, res) => {
       logged_in: req.session.logged_in 
     });
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
@@ -43,17 +35,18 @@ router.get('/pet/:id', async (req, res) => {
         {
           model: User,
           attributes: ['name'],
+          as: 'favorited_by_user',
         },
       ],
     });
 
     const pet = petData.get({ plain: true });
-
     let isFavorite = false;
+
     if (req.session.logged_in) {
       const currentUser = await User.findByPk(req.session.user_id);
       if (currentUser) {
-        isFavorite = await currentUser.hasFavorite(petData);
+        isFavorite = await currentUser.hasFavorite(pet);
       }
     }
 
@@ -63,26 +56,7 @@ router.get('/pet/:id', async (req, res) => {
       isFavorite: isFavorite,
     });
   } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-// Use withAuth middleware to prevent access to route
-router.get('/profile', withAuth, async (req, res) => {
-  try {
-    // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Pet }],
-    });
-
-    const user = userData.get({ plain: true });
-
-    res.render('profile', {
-      ...user,
-      logged_in: true
-    });
-  } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
