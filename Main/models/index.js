@@ -5,7 +5,7 @@ const Favorite = require('./Favorite');
 User.belongsToMany(Pet, {
   through: {
     model: Favorite,
-    foreignKey: 'userId',
+    foreignKey: 'user_id',
   },
     as: 'favorite_pets'
 });

@@ -6,7 +6,7 @@ const favButtonHandler = async (event) => {
         "data-id"
     );
 
-    const response = await fetch(`/api/favorite`, {
+    const response = await fetch(`/api/favorites`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -4,13 +4,13 @@ const withAuth = require('../../utils/auth');
 
 router.post('/', async (req, res) => {
   try {
-    const userData = await User.create(req.body);
+    const { name, email, password } = req.body;
+    const userData = await User.create({ name, email, password });
 
+    req.session.user_id = userData.id;
+    req.session.logged_in = true;
     req.session.save(() => {
-      req.session.user_id = userData.id;
-      req.session.logged_in = true;
-
-      res.status(200).json(userData);
+      res.status(200).json({ user: userData, message: 'User profile created successfully!' });
     });
   } catch (err) {
     res.status(400).json(err);
@@ -37,10 +37,10 @@ router.post('/login', async (req, res) => {
       return;
     }
 
+    req.session.user_id = userData.id;
+    req.session.logged_in = true;
+
     req.session.save(() => {
-      req.session.user_id = userData.id;
-      req.session.logged_in = true;
-      
       res.json({ user: userData, message: 'You are now logged in!' });
     });
 
@@ -79,7 +79,7 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
-router.get('/:id/favorite', withAuth, async (req, res) => {
+router.get('/:id/favorites', withAuth, async (req, res) => {
   try {
     const user = await User.findByPk(req.params.id, {
       include: [{ model: Favorite, as: 'favorite_pets' }],

@@ -2,7 +2,26 @@ const router = require('express').Router();
 const { Pet, User, Favorite } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.post('/pet/:id/favorite', withAuth, async (req, res) => {
+router.post('/', async (req, res) => {
+  try {
+    const { pet_id } = req.body;
+
+    if (!pet_id) {
+      return res.status(400).json({ message: "Pet ID is required" });
+    }
+    const favorite = await Favorite.create({
+      pet_id,
+      user_id: req.session.user_id,
+    });
+
+    res.status(201).json({ message: 'Pet added to Favorites', favorite });
+  } catch (error) {
+    console.error('Error adding to favorites:', error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+router.post('/pet/:id/favorites', withAuth, async (req, res) => {
   try {
     const pet = await Pet.findByPk(req.params.id);
 
@@ -31,14 +50,6 @@ router.post('/pet/:id/favorite', withAuth, async (req, res) => {
     });
 
     res.status(200).json({ message: 'Pet added to favorites!' });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-router.post('/pet/:id/favorite', async (req, res) => {
-  try {
-    res.redirect('/login');
   } catch (err) {
     res.status(500).json(err);
   }

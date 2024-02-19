@@ -39,7 +39,7 @@ router.get('/pet/:id', async (req, res) => {
         },
       ],
     });
-
+    
     const pet = petData.get({ plain: true });
     let isFavorite = false;
 
@@ -70,5 +70,50 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+
+router.get('/profile', async (req, res) => {
+  try {
+
+    if (!req.session.logged_in) {
+      res.redirect('/login');
+      return;
+    }
+
+    const userData = await User.findByPk(req.session.user_id, {
+      include: [{ model: Pet, as: 'favorite_pets' }],
+    });
+
+    const user = userData.get({ plain: true });
+    res.render('profile', {
+      ...user,
+      logged_in: true
+    });
+  } catch (err) {
+    console.error('Error fetching user profile:', err);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+router.post('/profile/add-favorite', async (req, res) => {
+  try {
+    const { pet_id } = req.body;
+
+    if (!pet_id) {
+      return res.status(400).json({ message: "Pet ID is required" });
+    }
+
+    await Favorite.create({
+      pet_id,
+      user_id: req.session.user_id,
+    });
+
+    res.redirect('/profile');
+  } catch (error) {
+    console.error('Error adding to favorites:', error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+
 
 module.exports = router;
