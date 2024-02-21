@@ -1,6 +1,5 @@
 const router = require('express').Router();
-const { Pet, User } = require('../models');
-const withAuth = require('../utils/auth');
+const { Pet, User, Favorite } = require('../models');
 
 router.get('/', async (req, res) => {
   try {
@@ -10,6 +9,7 @@ router.get('/', async (req, res) => {
         {
           model: User,
           attributes: ['name'],
+          as: 'favorited_by_user'
         },
       ],
     });
@@ -23,6 +23,7 @@ router.get('/', async (req, res) => {
       logged_in: req.session.logged_in 
     });
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
@@ -34,37 +35,28 @@ router.get('/pet/:id', async (req, res) => {
         {
           model: User,
           attributes: ['name'],
+          as: 'favorited_by_user',
         },
       ],
     });
-
+    
     const pet = petData.get({ plain: true });
+    let isFavorite = false;
+
+    if (req.session.logged_in) {
+      const currentUser = await User.findByPk(req.session.user_id);
+      if (currentUser) {
+        isFavorite = await currentUser.hasFavorite(pet);
+      }
+    }
 
     res.render('pet', {
       ...pet,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      isFavorite: isFavorite,
     });
   } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-// Use withAuth middleware to prevent access to route
-router.get('/profile', withAuth, async (req, res) => {
-  try {
-    // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Pet }],
-    });
-
-    const user = userData.get({ plain: true });
-
-    res.render('profile', {
-      ...user,
-      logged_in: true
-    });
-  } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });
@@ -78,5 +70,50 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+
+router.get('/profile', async (req, res) => {
+  try {
+
+    if (!req.session.logged_in) {
+      res.redirect('/login');
+      return;
+    }
+
+    const userData = await User.findByPk(req.session.user_id, {
+      include: [{ model: Pet, as: 'favorite_pets' }],
+    });
+
+    const user = userData.get({ plain: true });
+    res.render('profile', {
+      ...user,
+      logged_in: true
+    });
+  } catch (err) {
+    console.error('Error fetching user profile:', err);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+router.post('/profile/add-favorite', async (req, res) => {
+  try {
+    const { pet_id } = req.body;
+
+    if (!pet_id) {
+      return res.status(400).json({ message: "Pet ID is required" });
+    }
+
+    await Favorite.create({
+      pet_id,
+      user_id: req.session.user_id,
+    });
+
+    res.redirect('/profile');
+  } catch (error) {
+    console.error('Error adding to favorites:', error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
+
+
 
 module.exports = router;

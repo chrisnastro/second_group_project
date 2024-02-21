@@ -6,30 +6,12 @@
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Create a New Profile:</h3>
-
-    <form class="form new-pet-form">
-      <div class="form-group">
-        <label for="pet-name">pet name:</label>
-        <input class="form-input" type="text" id="pet-name" name="pet-name" />
-      </div>
-      <div class="form-group">
-        <label for="pet-funding">needed funding ($):</label>
-        <input class="form-input" type="number" id="pet-funding" name="pet-funding" />
-      </div>
-      <div class="form-group">
-        <label for="pet-desc">description:</label>
-        <textarea class="form-input" id="pet-desc" name="pet-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </form>
+    <h3>Your Favorite Pets</h3>
   </div>
 
   {{#if pets.length}}
   <div class="col-md-6 pet-list">
-    <h3>Current Pets:</h3>
+    <h3>Favorite Pets:</h3>
 
     {{#each pets as |pet|}}
     <div class="row mb-2">

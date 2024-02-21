@@ -2,34 +2,25 @@ const router = require('express').Router();
 const { Pet } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.post('/', withAuth, async (req, res) => {
+// Route for fetching all pets
+router.get('/', async (req, res) => {
   try {
-    const newPet = await Pet.create({
-      ...req.body,
-      user_id: req.session.user_id,
-    });
-
-    res.status(200).json(newPet);
+    const pets = await Pet.findAll();
+    res.status(200).json(pets);
   } catch (err) {
-    res.status(400).json(err);
+    res.status(500).json(err);
   }
 });
 
-router.delete('/:id', withAuth, async (req, res) => {
+// // Route for fetching a single pet
+router.get('/:id', withAuth, async (req, res) => {
   try {
-    const petData = await Pet.destroy({
-      where: {
-        id: req.params.id,
-        user_id: req.session.user_id,
-      },
-    });
-
-    if (!petData) {
-      res.status(404).json({ message: 'No pet found with this id!' });
+    const pet = await Pet.findByPk(req.params.id);
+    if (!pet) {
+      res.status(404).json({ message: 'Pet not found!' });
       return;
     }
-
-    res.status(200).json(petData);
+    res.status(200).json(pet);
   } catch (err) {
     res.status(500).json(err);
   }

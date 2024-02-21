@@ -1,3 +1,17 @@
+<div class="text-center">
+  <h2>{{name}}</h2>
+  <p>{{description}} <br>
+{{type}} <br>
+{{primary_breed}} <br>
+{{age}} <br>
+{{gender}} <br>
+{{size}} <br>
+</p>
+
+{{#if isFavorite}}
+<p>This pet is already in your favorites list!</p>
+{{/if}}
+
 <div class="container col-md-6">
   <div class="card-pet">
     <h2>{{name}}</h2>
@@ -8,10 +22,15 @@
       Gender: {{gender}} <br>
       Size: {{size}} <br>
     </p>
-
-
     <p>
       <button class="btn btn-primary">Save This Pet!</button>
     </p>
+          <div>
+        <button data-id="{{id}}" id= "favorite-pet" class ="btn btn-primary">Save This Pet!</button>
+      </div>
+  </div>
+
   </div>
 </div>
+
+<script src="/js/pet.js"></script>

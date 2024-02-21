@@ -1,47 +1,66 @@
-const newFormHandler = async (event) => {
-  event.preventDefault();
+document.addEventListener('DOMContentLoaded', async () => {
 
-  const name = document.querySelector('#project-name').value.trim();
-  const needed_funding = document.querySelector('#project-funding').value.trim();
-  const description = document.querySelector('#project-desc').value.trim();
+  const handleUserProfileCreation = async (event) => {
+    event.preventDefault();
 
-  if (name && needed_funding && description) {
-    const response = await fetch(`/api/projects`, {
-      method: 'POST',
-      body: JSON.stringify({ name, needed_funding, description }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+    const name = document.querySelector('#name-input').value.trim();
+    const email = document.querySelector('#email-input').value.trim();
+    const password = document.querySelector('#password-input').value.trim();
 
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to create project');
+    try {
+      const response = await fetch('/api/users/profile', {
+        method: 'POST',
+        body: JSON.stringify({ name, email, password }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        window.location.reload();
+      } else {
+        console.error('Failed to create user profile');
+        alert('Failed to create user profile');
+      }
+    } catch (error) {
+      console.error('Error creating user profile:', error);
+      alert('Failed to create user profile');
     }
-  }
-};
+  };
 
-const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
+  async function handleFavoritePet(event) {
+    event.preventDefault();
 
-    const response = await fetch(`/api/projects/${id}`, {
-      method: 'DELETE',
-    });
+    const petId = event.target.getAttribute('data-pet-id');
 
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to delete project');
+    try {
+      const response = await fetch(`/api/favorites/${petId}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        console.log('Pet added to favorites!');
+      } else {
+        console.error('Failed to add pet to favorites');
+        alert('Failed to add pet to favorites');
+      }
+    } catch (error) {
+      console.error('Error adding pet to favorites:', error);
+      alert('Error adding pet to favorites');
     }
+  };
+
+  const userProfileForm = document.querySelector('#user-profile-form');
+  if (userProfileForm) {
+    userProfileForm.addEventListener('submit', handleUserProfileCreation);
   }
-};
 
-document
-  .querySelector('.new-project-form')
-  .addEventListener('submit', newFormHandler);
+  const favoritePetButton = document.querySelector('#favorite-pet-button');
+  if (favoritePetButton) {
+    favoritePetButton.addEventListener('click', handleFavoritePet);
+  }
+});
 
-document
-  .querySelector('.project-list')
-  .addEventListener('click', delButtonHandler);

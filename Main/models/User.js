@@ -2,9 +2,26 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
+const Favorite = require('./Favorite');
+
 class User extends Model {
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
+  }
+  
+  async hasFavorite(pet) {
+    try {
+      const favorite = await Favorite.findOne({
+        where: {
+          user_id: this.id,
+          pet_id: pet.id,
+        },
+      });
+      return favorite !== null; 
+    } catch (error) {
+      console.error('Error checking favorite:', error);
+      return false; 
+    }
   }
 }
 
@@ -51,7 +68,7 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: 'User',
   }
 );
 
