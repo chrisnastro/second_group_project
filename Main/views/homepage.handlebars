@@ -1,23 +1,20 @@
 <!-- Loop over each object in the projects array -->
 {{#each pets as |pet| }}
-<div class="row mb-4 pet">
-  <div class="col-md-5">
+
+<div class="card col-md-3">
+  <div class="card-content col-auto">
     <h2>
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
       <a href="/pet/{{pet.id}}">{{pet.name}}</a>
     </h2>
-<p>
-<img src="/images/{{filename}}" alt="{{description}}">
-{{pet.type}} <br>
-{{pet.primary_breed}} <br>
-{{pet.age}} <br>
-{{pet.gender}} <br>
-{{pet.size}} <br>
-      {{pet.description}}
+  <img src="/images/{{filename}}" alt="{{description}}"> <br>
+  <h4>{{pet.primary_breed}}</h4> <br>
+
     </p>
     {{#if isFavorite}}
 <p>This pet is already in your favorites list!</p>
 {{/if}}
   </div>
 </div>
+
 {{/each}}
