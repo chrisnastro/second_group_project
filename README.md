@@ -4,20 +4,6 @@
 ## Description
 Find your new best friend. Find-a-Buddy helps the user find a pet up for adoption in their area based on the type and breed of the pet after they sign up and login.
 
-## User Story
-AS A person interested in adopting a pet
-I WANT to be able to login to a search database
-SO THAT I can see pets available for adoption in my area
-
-## Acceptance Criteria
-GIVEN A fullstack application
-WHEN I search my location and pet information
-THEN I am presented with a list of available pets for adoption in my area
-WHEN I like a pet
-THEN it is saved to my profile
-WHEN I login
-THEN I am able to see the pets that I have saved
-
 ## Table of Contents
 
 - [Installation](#installation)
@@ -25,38 +11,52 @@ THEN I am able to see the pets that I have saved
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 - [Further-Development](#further-development)
-- [Author](#author)
+- [Authors](#authors)
 - [Contact](#contact)
-- [Final-Thoughts](#final-thoughts)
 
 ## Installation
 
 ## Usage
-
+- [https://github.com/chrisnastro/second_group_project](github repo)
+- [https://frozen-everglades-53518-2900550252f6.herokuapp.com/](deployed app on heroku)
 
 ## License
-See the License file for license information.
+MIT License
+Use the following link to learn more about the license: (https://opensource.org/license/mit/)
 
 ## Acknowledgements
 This application utilizes the following packages along with chatgpt as a debugging tool:
 
 - [https://expressjs.com/](Express.js)
-- [https://www.npmjs.com/package/uuid](uuid)
+- [https://www.mysql.com/](mysql)
+- [https://www.npmjs.com/package/dotenv](dotenv)
+- [https://www.npmjs.com/package/sequelize](sequelize)
+- [https://next-auth.js.org/configuration/nextjs](NextAuth.js)
+- [https://handlebarsjs.com/](handlebars.js)
+- [https://necolas.github.io/normalize.css/](normalize.css)
 
 ## Further Development
 
 - [] add additional search criteria such as age, sex, color
-- [] add remove favorite functionality
+- [] refine favorite functionality
 - [] add distance search criteria
 
 ## Authors
 
-- Ashley Maximillian
+-Ashley Maximillian
 - [e6m9 on github](https://github.com/e6m9)
 
+-Chris Nastro
+- [chrisnastro on hithub](https://github.com/chrisnastro)
+
+-Manin Gauba
+- [GxUniverse on github](https://github.com/GxUniverse)
+
+-Harold Stephens
+- [haroldstephens on github](https://github.com/haroldstephens)
+
 ## Contact
-For any inquiries, please send yr emails to:
+
+For any inquiries, please send your emails to:
 
 - alostsound@gmail.com
-
-## Final Thoughts
