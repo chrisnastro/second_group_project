@@ -17,6 +17,8 @@ Find your new best friend. Find-a-Buddy helps the user find a pet up for adoptio
 ## Installation
 
 ## Usage
+- [https://github.com/chrisnastro/second_group_project](github repo)
+- [https://frozen-everglades-53518-2900550252f6.herokuapp.com/](deployed app on heroku)
 
 ## License
 MIT License
@@ -41,7 +43,7 @@ This application utilizes the following packages along with chatgpt as a debuggi
 
 ## Authors
 
-- Ashley Maximillian
+-Ashley Maximillian
 - [e6m9 on github](https://github.com/e6m9)
 
 -Chris Nastro
@@ -51,7 +53,7 @@ This application utilizes the following packages along with chatgpt as a debuggi
 - [GxUniverse on github](https://github.com/GxUniverse)
 
 -Harold Stephens
--[haroldstephens on github](https://github.com/haroldstephens)
+- [haroldstephens on github](https://github.com/haroldstephens)
 
 ## Contact
 
